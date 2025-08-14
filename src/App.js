@@ -1,10 +1,10 @@
 import "./App.css";
-import UseStateCounter from "./components/UseStateCounter";
+import UseStateToggle from "./components/UseStateToggle";
 
 function App() {
   return (
     <div className="App">
-      <UseStateCounter />
+      <UseStateToggle />
     </div>
   );
 }
