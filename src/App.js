@@ -1,10 +1,10 @@
 import "./App.css";
-import UsersInput from "./components/UsersInput";
+import RandomNumber from "./components/RandomNumber";
 
 function App() {
   return (
     <div className="App">
-      <UsersInput />
+      <RandomNumber />
     </div>
   );
 }
