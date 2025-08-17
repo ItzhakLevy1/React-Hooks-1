@@ -1,10 +1,10 @@
 import "./App.css";
-import UseStateToggle from "./components/UseStateToggle";
+import UsersInput from "./components/UsersInput";
 
 function App() {
   return (
     <div className="App">
-      <UseStateToggle />
+      <UsersInput />
     </div>
   );
 }
