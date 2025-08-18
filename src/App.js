@@ -1,10 +1,10 @@
 import "./App.css";
-import RandomNumber from "./components/RandomNumber";
+import ItemList from "./components/ItemList";
 
 function App() {
   return (
     <div className="App">
-      <RandomNumber />
+      <ItemList />
     </div>
   );
 }
