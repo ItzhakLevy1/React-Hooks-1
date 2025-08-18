@@ -24,6 +24,12 @@ const ItemList = () => {
     }
   };
 
+  // Function to delete an item by index
+  const handleDelete = (index) => {
+    //  Delete item by index
+    setItems(items.filter((item, i) => i !== index)); // Remove item from list by creating a new array with all items except the one at the deleted index
+  };
+
   return (
     <div>
       <h2>List Of Items:</h2>
@@ -41,8 +47,14 @@ const ItemList = () => {
 
       {/* Render the list */}
       <ul>
-        {items.map((it, index) => (
-          <li key={index}>{it}</li>
+        {/* Loop through each item in the items array and render a list item */}
+        {items.map((item, index) => (
+          <li key={index}>
+            {/* Display the item text */}
+            {item}
+            {/* Delete button that removes this specific item when clicked */}
+            <button onClick={() => handleDelete(index)}>Delete</button>
+          </li>
         ))}
       </ul>
     </div>
